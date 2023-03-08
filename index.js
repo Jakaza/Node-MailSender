@@ -44,17 +44,6 @@ app.post('/sendemail', async (req, res) => {
       message: 'success'
     })
 
-    let reply = await transporter.sendMail({
-      from: "goodnessjakazac@gmail.com",
-      to: email,
-      subject: "Thanks Got Your Email",
-      text: "I will get back to you some",
-      html: `<p> Hi,  ${email}, i will get back to you soon.</p> <br> <h3> Thanks for mailing me. </h3>`// html body
-    });
-
-
-
-
   } else {
 
 
